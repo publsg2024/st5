@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ul 순서가 없는 목록</title>
+</head>
+<body>
+  <p>
+    상품목록, 게시판글처럼 목록에 순서가 중요하지 않을때 나열하는 테그<br>
+    부모UL 아래 자식을 li 나열한다
+  </p>
+  <!-- 줄바꿈이 있으니 블록레벨 -->
+  <!-- UL의 자식 li가 3번 반복되어라 emmet표기법 ul>li*3 -->
+  <ul>
+    <li>원피스</li>
+    <li>상의</li>
+    <li>하의</li>
+  </ul>
+
+   
+  <!-- 3일차 상품분류 연습표 참고 -->
+  <!-- UL의 자식 li가 6번 반복 emmet표기법 ul>li*6 -->
+  <ul>
+    <li>Best100</li>
+    <li>New10%</li>
+    <li>Dress</li>
+    <li>Outer</li>
+    <li>Top
+      <!-- li안에도 ul테그가 들어와 ul>li나열하여 depth를 만들수 있다 -->
+      <ul>
+        <li>티</li>
+        <li>셔츠</li>
+        <li>블라우스</li>
+      </ul>
+    </li>
+    <li>Bottom
+      <ul>
+        <li>pants</li>
+        <li>skirt</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
